@@ -8,7 +8,7 @@
 
 	<!--  TODO 9: Identify the correct xml attribute to inform the container 
 	to use autowiring by referring to slide no. 31 -->
-	<bean id="flightRepo" class="xml.FlightRepositoryImpl3" />
+	<bean id="flightRepo" class="xml.FlightRepositoryImpl3" autowire="byType"/>
 	
 </beans>
 

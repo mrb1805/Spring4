@@ -15,8 +15,8 @@ public class FlightRepositoryTest {
 
 	@Test
 	public void testFlightRepo() {
-		ApplicationContext container = new ClassPathXmlApplicationContext("annotations-config-3.xml ");
-		FlightRepository flightRepo = (FlightRepository) container.getBean("flightRepositoryImpl2");
+		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-3.xml ");
+		FlightRepository flightRepo = (FlightRepository) container.getBean("flightRepo");
 		Assert.assertNotNull(flightRepo);
 		List<Flight> flights = flightRepo.getAvailableFlights();
 		Assert.assertTrue(flights.size() > 0);
