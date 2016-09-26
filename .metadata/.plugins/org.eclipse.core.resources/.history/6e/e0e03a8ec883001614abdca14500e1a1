@@ -23,7 +23,7 @@ public class FlightRepositoryImpl3 implements FlightRepository {
 	private DataSource dataSource;
 	
 	
-	//@Autowired @Qualifier("ds")
+	@Autowired @Qualifier("ds")
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

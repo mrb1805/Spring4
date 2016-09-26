@@ -19,11 +19,9 @@ import common.FlightRepository;
 public class FlightRepositoryImpl3 implements FlightRepository {
 
 	//TODO 8: try directly injecting the DataSource by referring to slide no. 29
-	@Autowired @Qualifier("ds")
+	
 	private DataSource dataSource;
-	
-	
-	//@Autowired @Qualifier("ds")
+	@Autowired @Qualifier("ds")
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

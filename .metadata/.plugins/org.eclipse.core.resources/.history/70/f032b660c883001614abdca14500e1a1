@@ -9,8 +9,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
 import common.Flight;
 import common.FlightRepository;
@@ -21,9 +20,7 @@ public class FlightRepositoryImpl3 implements FlightRepository {
 	//TODO 8: try directly injecting the DataSource by referring to slide no. 29
 	@Autowired @Qualifier("ds")
 	private DataSource dataSource;
-	
-	
-	//@Autowired @Qualifier("ds")
+
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
