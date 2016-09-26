@@ -10,6 +10,7 @@
 
 	<!-- TODO 5: Refer slide no. 25 to identify the configuration needed to inform the container
 	about the presence of fully annotated beans in our application. -->
+	
 	<context:component-scan base-package="annotations"></context:component-scan>
 </beans>
 
