@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 import common.Flight;
@@ -19,6 +20,14 @@ public class FlightRepositoryImpl implements FlightRepository {
 	private DataSource dataSource;
 	
 	//TODO 2: Refer slide no. 22 to identify the annotation for injecting a DataSource
+	@Resource(name="ds")
+	
+	//@Inject
+	//@Named("ds")
+	
+	//@Autowired
+	//Qualifier("ds")
+	
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

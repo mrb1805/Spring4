@@ -10,9 +10,9 @@
 
 	<!-- TODO 3: Refer slide no. 22 to identify the configuration needed to inform the container
 	about the presence of annotations in our code. -->
-	
-	<bean id="flightRepo" class="annotations.FlightRepositoryImpl" />	
-
+	<context:annotation-config/>
+	<bean id="flightRepo" class="annotations.FlightRepositoryImpl"/>	
+		<bean id="flightRepo" class="annotations.FlightRepositoryImpl"/>	
 </beans>
 
 
