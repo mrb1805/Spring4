@@ -25,8 +25,8 @@ public class FlightRepositoryImpl implements FlightRepository {
 
 	@Resource(name="ds")
 	
-	@Inject
-	@Named("ds")
+//	@Inject
+//	@Named("ds")
 
 //	@Autowired
 //	@Qualifier("ds")

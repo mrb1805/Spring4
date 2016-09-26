@@ -22,14 +22,14 @@ public class FlightRepositoryImpl implements FlightRepository {
 	private DataSource dataSource;
 	
 	//TODO 2: Refer slide no. 22 to identify the annotation for injecting a DataSource
-
+/*	
 	@Resource(name="ds")
 	
-	@Inject
-	@Named("ds")
-
-//	@Autowired
-//	@Qualifier("ds")
+//	@Inject
+//	@Named("ds")
+*/	
+	@Autowired
+	@Qualifier("ds")
 	
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
