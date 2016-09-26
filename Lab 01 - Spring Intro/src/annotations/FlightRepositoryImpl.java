@@ -8,32 +8,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
-import javax.inject.Named;
 import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
 import common.Flight;
 import common.FlightRepository;
 
 //TODO 4: Identify the correct annotation for automatically registering this class with the container
 //by referring to slide no. 25
+
+@Repository
 public class FlightRepositoryImpl implements FlightRepository {
 
 	private DataSource dataSource;
 	
 	//TODO 2: Refer slide no. 22 to identify the annotation for injecting a DataSource
 
-	@Resource(name="ds")
-	
 //	@Inject
 //	@Named("ds")
-//
+
 //	@Autowired
 //	@Qualifier("ds")
 	
+	@Resource(name="ds")
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

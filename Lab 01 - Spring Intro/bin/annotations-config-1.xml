@@ -13,8 +13,3 @@
 	<context:annotation-config/>
 	<bean id="flightRepo" class="annotations.FlightRepositoryImpl"/>
 </beans>
-
-
-
-
-

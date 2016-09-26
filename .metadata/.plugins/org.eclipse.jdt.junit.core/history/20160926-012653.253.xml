@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FlightRepositoryTest" project="Lab 01 - Spring Intro" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="test.FlightRepositoryTest" time="1.244">
+    <testcase name="testFlightRepo" classname="test.FlightRepositoryTest" time="1.244">
+      <error>java.lang.RuntimeException: java.sql.SQLException: error in script file line: 56 org.hsqldb.HsqlException: error in script file: &#13;
+	at xml.FlightRepositoryImpl.getAvailableFlights(FlightRepositoryImpl.java:44)&#13;
+	at test.FlightRepositoryTest.testFlightRepo(FlightRepositoryTest.java:21)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: java.sql.SQLException: error in script file line: 56 org.hsqldb.HsqlException: error in script file: &#13;
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)&#13;
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)&#13;
+	at org.hsqldb.jdbc.JDBCConnection.&lt;init&gt;(Unknown Source)&#13;
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)&#13;
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)&#13;
+	at java.sql.DriverManager.getConnection(Unknown Source)&#13;
+	at java.sql.DriverManager.getConnection(Unknown Source)&#13;
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)&#13;
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)&#13;
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)&#13;
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)&#13;
+	at xml.FlightRepositoryImpl.getAvailableFlights(FlightRepositoryImpl.java:28)&#13;
+	... 24 more&#13;
+Caused by: org.hsqldb.HsqlException: error in script file line: 56 org.hsqldb.HsqlException: error in script file: &#13;
+	at org.hsqldb.error.Error.error(Unknown Source)&#13;
+	at org.hsqldb.scriptio.ScriptReaderText.readExistingData(Unknown Source)&#13;
+	at org.hsqldb.scriptio.ScriptReaderBase.readAll(Unknown Source)&#13;
+	at org.hsqldb.persist.Log.processScript(Unknown Source)&#13;
+	at org.hsqldb.persist.Log.open(Unknown Source)&#13;
+	at org.hsqldb.persist.Logger.openPersistence(Unknown Source)&#13;
+	at org.hsqldb.Database.reopen(Unknown Source)&#13;
+	at org.hsqldb.Database.open(Unknown Source)&#13;
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)&#13;
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)&#13;
+	... 34 more&#13;
+Caused by: org.hsqldb.HsqlException: error in script file: &#13;
+	at org.hsqldb.error.Error.error(Unknown Source)&#13;
+	... 44 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
