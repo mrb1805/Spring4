@@ -12,7 +12,7 @@
 	about the presence of annotations in our code. -->
 	<context:annotation-config/>
 	<bean id="flightRepo" class="annotations.FlightRepositoryImpl"/>	
-
+		<bean id="flightRepo" class="annotations.FlightRepositoryImpl"/>	
 </beans>
 
 
