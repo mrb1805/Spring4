@@ -9,13 +9,17 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import common.Flight;
 import common.FlightRepository;
 
+@Repository
 public class FlightRepositoryImpl2 implements FlightRepository {
 
 	private DataSource dataSource;
-
+	@Autowired
 	public FlightRepositoryImpl2(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

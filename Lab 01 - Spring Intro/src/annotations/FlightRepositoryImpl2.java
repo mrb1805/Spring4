@@ -9,17 +9,19 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import common.Flight;
 import common.FlightRepository;
-
+@Repository
 public class FlightRepositoryImpl2 implements FlightRepository {
 
 	private DataSource dataSource;
 	
 	//TODO 7: Use the correct annotation to inject the DataSource by referring to slide no. 27
 	//Also use @Repository at the class level so that you don't need to add bean entry in the xml
+	@Autowired
 	public FlightRepositoryImpl2(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}

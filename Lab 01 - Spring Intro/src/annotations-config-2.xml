@@ -7,6 +7,8 @@
 	xmlns:context="http://www.springframework.org/schema/context">
 
 	<import resource="db-config.xml" />
+	
+	
 
 	<!-- TODO 5: Refer slide no. 25 to identify the configuration needed to inform the container
 	about the presence of fully annotated beans in our application. -->
