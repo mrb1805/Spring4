@@ -1,0 +1,18 @@
+package com.bank;
+
+public class Bank {
+	
+	Private Balance;	
+	
+	public void checkBalance(int Amount){
+		if(Amount>Balance)
+		{
+			System.out.println("insufficient Balance");
+		}
+		else
+		{
+			System.out.println("Collect your Money !!");
+		}
+			
+	}
+}

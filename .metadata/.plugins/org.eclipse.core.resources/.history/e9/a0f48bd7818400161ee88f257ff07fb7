@@ -1,0 +1,8 @@
+package com.bank;
+
+public class Bank {
+	
+	public void amountDeposited(){
+				System.out.println("Amount Withdrawn Successfully");
+	}
+}

@@ -1,0 +1,15 @@
+package com.bank;
+
+public class Atm {
+	
+	private Bank bank;
+	
+	public void setBank(Bank bank){
+		this.bank = bank;
+	}
+	
+	public void withdraw(int acno, double amount){
+		bank.withdrawMoney(acno,amount);
+	}
+		
+}
