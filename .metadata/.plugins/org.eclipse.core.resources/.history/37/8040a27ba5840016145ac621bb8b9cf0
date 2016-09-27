@@ -28,25 +28,34 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 
 	@Override
 	public CarParts loadCarParts(int partNo) {
-		CarParts part = jdbcTemplate.queryForObject("select * from tbl_carparts where partno = ?",new CarPartsMapper(),partNo);	
-		return part;
+		class CarPartsMapper implements RowMapper<CarParts>{
+
+			@Override
+			public CarParts mapRow(ResultSet rs, int index) throws SQLException{
+				com.training.entity.CarParts part = new CarParts();
+				part.setPartNo(rs.getInt("PartNo"));
+				part.setPartName(rs.getString("PartName"));
+				part.setQuantity(rs.getInt("Quantity"));
+				return part;				
+			}
+			
+		}
+			CarParts part = jdbcTemplate.queryForObject("select * from tbl_carparts where partno = ?",new CarPartsMapper(),partNo);	
+			return part;
 	}
 
 	@Override
 	public List<CarParts> loadAllAvailableCarParts() {
+		class CarPartsMapper implements RowMapper<CarParts>{
 
-	List<CarParts> parts = jdbcTemplate.query("select * from tbl_carparts ",new CarPartsMapper());	
-	return parts;
-}
-
-
-class CarPartsMapper implements RowMapper<CarParts>{
-	@Override
-	public CarParts mapRow(ResultSet rs, int index) throws SQLException{
-		com.training.entity.CarParts part = new CarParts();
-		part.setPartNo(rs.getInt("PartNo"));
-		part.setPartName(rs.getString("PartName"));
-		part.setQuantity(rs.getInt("Quantity"));
-		return part;				
+			@Override
+			public CarParts mapRow(ResultSet rs, int index) throws SQLException{
+				com.training.entity.CarParts part = new CarParts();
+				part.setPartNo(rs.getInt("PartNo"));
+				part.setPartName(rs.getString("PartName"));
+				part.setQuantity(rs.getInt("Quantity"));
+				return part;				
+			}
 	}
+
 }

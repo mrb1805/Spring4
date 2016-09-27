@@ -35,12 +35,14 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 	@Override
 	public List<CarParts> loadAllAvailableCarParts() {
 
-	List<CarParts> parts = jdbcTemplate.query("select * from tbl_carparts ",new CarPartsMapper());	
-	return parts;
+	List<CarParts> part = jdbcTemplate.query("select * from tbl_carparts ",new CarPartsMapper());	
+	return part;
+
 }
 
 
 class CarPartsMapper implements RowMapper<CarParts>{
+
 	@Override
 	public CarParts mapRow(ResultSet rs, int index) throws SQLException{
 		com.training.entity.CarParts part = new CarParts();

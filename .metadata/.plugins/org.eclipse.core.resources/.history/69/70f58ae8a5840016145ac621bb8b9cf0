@@ -37,6 +37,7 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 
 	List<CarParts> parts = jdbcTemplate.query("select * from tbl_carparts ",new CarPartsMapper());	
 	return parts;
+
 }
 
 
