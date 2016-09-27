@@ -1,0 +1,13 @@
+package com.jpmc.demoTest;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestHelloWorld {
+	
+	public static void main(String[] args){
+		ApplicationContext container = new ClassPathXmlApplicationContext("demoConfig.xml");
+		
+	}
+
+}
