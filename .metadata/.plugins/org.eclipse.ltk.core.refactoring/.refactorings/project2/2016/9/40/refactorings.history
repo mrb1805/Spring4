@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;project2/src/xml-config-1.xml&apos; to &apos;demoConfig.xml&apos;" description="Rename resource &apos;xml-config-1.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/xml-config-1.xml" name="demoConfig.xml" stamp="1474953494242" updateReferences="true"/>
+</session>
