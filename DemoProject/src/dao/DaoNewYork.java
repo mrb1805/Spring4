@@ -21,13 +21,14 @@ public class DaoNewYork implements TradeData {
 	}
 
 	public void getTradeDetails(String tradeId) {
+		String item = "NY123";
 		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		
 		try {
 			conn = dataSourceNY.getConnection();
-			String sql = "select amount from nk_trade WHERE tradeId="+tradeId+"";
+			String sql = "select amount from nk_trade WHERE tradeId="+item+"";
 			pst = conn.prepareStatement(sql);
 			rs = pst.executeQuery();
 			while(rs.next()) {

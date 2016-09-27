@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  Please edit the DataSource configuration in db-config.xml file if required -->
+	<import resource="db-config.xml"/>
+	
+	<bean id="tradeDataLN" class="dao.DaoLondon">
+		<property name="dataSource" ref="ln"></property>
+	</bean>
+	<bean id="tradeDataNY" class="dao.DaoNewYork">
+		<property name="dataSource" ref="ny"></property>
+	</bean>
+	<bean id="tradeDataTK" class="dao.DaoTokyo">
+		<property name="dataSource" ref="tk"></property>
+	</bean>
+	  	
+</beans>

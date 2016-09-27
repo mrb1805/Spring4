@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import main.TradeApp;
 import main.TradeData;
 
 
@@ -14,10 +15,13 @@ public class TradeDataTest {
 
 	@Test
 	public void testTradeData() {
-		@SuppressWarnings("resource")
-		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-1.xml ");
+		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-1.xml");
 		TradeData tradeDao = (TradeData) container.getBean("tradeDataNY");
 		Assert.assertNotNull(tradeDao);
+		System.out.println(tradeDao);
+		TradeApp data = new TradeApp();
+		System.out.println(data.toString());
+		
 		
 	}
 }

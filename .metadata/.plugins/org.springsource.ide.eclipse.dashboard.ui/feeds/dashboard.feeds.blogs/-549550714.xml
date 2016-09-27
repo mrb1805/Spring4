@@ -5,7 +5,152 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-09-23T21:54:32Z</updated>
+  <updated>2016-09-26T22:13:00Z</updated>
+  <entry>
+    <title>Spring Cloud Camden.RELEASE and Brixton.SR6 are available</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/26/spring-cloud-camden-release-and-brixton-sr6-are-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Spencer Gibb</name>
+    </author>
+    <id>tag:spring.io,2016-09-26:2638</id>
+    <updated>2016-09-26T22:13:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, I am happy to announce the general availability of the &lt;a href="https://cloud.spring.io"&gt;Spring Cloud Camden&lt;/a&gt; Release Train along with Service Release 6 of Brixton. &lt;code&gt;Camden.RELEASE&lt;/code&gt; can be found in our &lt;a href="https://repo.spring.io/release/"&gt;Spring Release&lt;/a&gt; repository. You can check out the Camden &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Camden-Release-Notes"&gt;release notes for more information&lt;/a&gt;. &lt;code&gt;Brixton.SR6&lt;/code&gt; is largely a &lt;a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Brixton-Release-Notes"&gt;bug-fix release&lt;/a&gt; and is recommended for use with the Brixton Release Train.&lt;/p&gt;&lt;h2&gt;&lt;a href="#highlights-of-the-camden-release-train" class="anchor" name="highlights-of-the-camden-release-train"&gt;&lt;/a&gt;Highlights of the Camden Release Train&lt;/h2&gt;
+&lt;p&gt;Spring Cloud Contract is a new project that provides support for Consumer Driven Contracts and service schemas in Spring applications. Spring Cloud Netflix supports customization of Ribbon component classes via properties, uses the new community-maintained &lt;a href="https://github.com/OpenFeign/feign"&gt;OpenFeign&lt;/a&gt; and includes various fixes and improvements to Zuul. Spring Cloud Consul adds support for Spring Cloud Bus using Consul&amp;rsquo;s event API. The CLI adds a &lt;code&gt;spring cloud&lt;/code&gt; command to start various Spring Cloud servers with a single command. Supported servers include Eureka, Config Server and Hystrix Dashboard.&lt;/p&gt;
+&lt;p&gt;The following modules were updated as part of Camden.RELEASE:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Module &lt;/th&gt;
+      &lt;th&gt;Version &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Build &lt;/td&gt;
+      &lt;td&gt;1.2.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Stream &lt;/td&gt;
+      &lt;td&gt;Brooklyn.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Bus &lt;/td&gt;
+      &lt;td&gt;1.2.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Config &lt;/td&gt;
+      &lt;td&gt;1.2.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Netflix &lt;/td&gt;
+      &lt;td&gt;1.2.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Consul &lt;/td&gt;
+      &lt;td&gt;1.1.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spring Cloud Contract &lt;/td&gt;
+      &lt;td&gt;1.0.0.RELEASE &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;NOTE: Spring Cloud CLI 1.2.0.RC1 has been released. GA for the CLI project will happen shortly.&lt;/p&gt;
+&lt;p&gt;The combined release train documentation is available &lt;a href="http://cloud.spring.io/spring-cloud-static/spring-cloud.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And, as always, we welcome feedback: either on &lt;a href="https://github.com/spring-cloud/"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloudOSS"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;version&amp;gt;Camden.RELEASE&amp;lt;/version&amp;gt;&#xD;
+    &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;buildscript {&#xD;
+  dependencies {&#xD;
+    classpath &amp;quot;org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE&amp;quot;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+apply plugin: &amp;quot;spring-boot&amp;quot;&#xD;
+&#xD;
+dependencyManagement {&#xD;
+  imports {&#xD;
+    mavenBom &amp;#39;org.springframework.cloud:spring-cloud-dependencies:Camden.RELEASE&amp;#39;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-eureka&amp;#39;&#xD;
+    ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne Platform 2016 Replay: Spring MVC 4 Web Apps</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/26/springone-platform-2016-replay-spring-mvc-4-web-apps" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-09-26:2637</id>
+    <updated>2016-09-26T11:15:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Rossen Stoyanchev&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-mvc-4-web-apps"&gt;http://www.slideshare.net/SpringCentral/spring-mvc-4-web-apps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Framework 4.3 is the last in the 4.x generation and it brings plenty of refinements to the @MVC programming model. In Spring Framework 5.0 the same programming model will be supported on a new reactive foundation. This talk will review the main features in 4.x and preview the work towards Spring Framework 5.0.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6Y1dwidNJPQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne Platform 2016 Replay: Cloud Native Java with Spring Cloud Services</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/26/springone-platform-2016-replay-cloud-native-java-with-spring-cloud-services" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-09-26:2636</id>
+    <updated>2016-09-26T11:08:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speakers: Craig Walls; Spring Social Lead, Pivotal. Roy Clarkson; Spring Mobile Lead, Pivotal.&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/Pivotal/cloud-native-java-with-spring-cloud-services-64888067"&gt;http://www.slideshare.net/Pivotal/cloud-native-java-with-spring-cloud-services-64888067&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Developing cloud native applications presents several challenges. How do microservices discover each other? How do you configure them? How can you make them resilient to failure? How can you monitor the health of each microservice? &lt;/p&gt;
+&lt;p&gt;Spring Cloud addresses all of these concerns. Even so, you still must explicitly develop your own discovery server, configuration server, and circuit breaker dashboard for monitoring the circuit breakers in each microservice. &lt;/p&gt;
+&lt;p&gt;Spring Cloud Services for Pivotal Cloud Foundry picks up where Spring Cloud leaves off, offering a discovery server, configuration server, and Hystrix dashboard as services that can be bound to applications deployed in Pivotal Cloud Foundry, leaving you to focus on developing the services that drive your application. In this talk, we will introduce the capabilities provided by Spring Cloud Services and demonstrate how it makes simple work of deploying cloud native applications to Cloud Foundry.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3dcTqJYAXUk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Data Flow for Apache Mesos 1.0 GA released</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/26/spring-cloud-data-flow-for-apache-mesos-1-0-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2016-09-23:2633</id>
+    <updated>2016-09-26T10:03:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, I am excited to announce the General Availability of Spring Cloud Data Flow for Apache Mesos 1.0. &lt;/p&gt;
+&lt;p&gt;Spring Cloud Data Flow for Apache Mesos provides support for orchestrating long-running (streaming) and short-lived (task/batch) data microservices on Apache Mesos. We launch stream apps using Application Groups on Marathon and tasks as Chronos one-time jobs. The release includes a template JSON script for deploying the Spring Cloud Data Flow server on Marathon. We also include sample scripts for deploying Redis, MySQL and Rabbit MQ on Marathon to be used for testing a complete deployment. In addition to running on an Apache Mesos cluster, we also support running on a Mesosphere DC/OS cluster.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; A great way to start using this new release is to follow the &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/#spring-cloud-data-flow-server-implementations"&gt;release matrix&lt;/a&gt; on the project page, which includes the download coordinates and the links to the reference guide.&lt;/p&gt;
+&lt;p&gt;Changes since the previous 1.0 RC2 release:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adds configuration support for “authorization token” for secured access to Marathon and Chronos REST APIs on an OAuth enabled DC/OS cluster&lt;/li&gt;
+  &lt;li&gt;Builds upon Spring Cloud Data Flow 1.0.1.RELEASE and Spring Cloud Deployer for Apache Mesos 1.0.4.RELEASE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get started using Spring Cloud Data Flow for Apache Mesos &lt;a href="http://docs.spring.io/spring-cloud-dataflow-server-mesos/docs/1.0.0.RELEASE/reference/htmlsingle/#_getting_started"&gt;follow the steps&lt;/a&gt; outlined in the reference documentation.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upcoming-webinar" class="anchor" name="upcoming-webinar"&gt;&lt;/a&gt;Upcoming webinar&lt;/h2&gt;
+&lt;p&gt;Tune-in to “&lt;a href="https://spring.io/blog/2016/09/13/webinar-data-microservices-in-the-cloud"&gt;Data Microservices in the Cloud&lt;/a&gt;” webinar scheduled on 9/29/2016 to learn more about Spring Cloud Data Flow and the latest improvements.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Contract 1.0.0.RELEASE is available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/09/23/spring-cloud-contract-1-0-0-release-is-available" />
@@ -857,121 +1002,5 @@ dependencies {&#xD;
     ...&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session 1.3.0 M2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/14/spring-session-1-3-0-m2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2016-09-14:2617</id>
-    <updated>2016-09-14T12:44:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, I&amp;#8217;m pleased to announce the release of Spring Session 1.3.0.M2. This release release closes lots of community submitted Pull Requests. For a complete list of changes see the &lt;a href="https://github.com/spring-projects/spring-session/milestone/6?closed=1"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-Spring Session 1.3.0.M1 release had some problems, so we followed up with an immediate release of Spring Session 1.3.0.M2
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;h1 id="what-s-new-in-spring-session-1-3-0-m2" class="sect0"&gt;&lt;a class="anchor" href="#what-s-new-in-spring-session-1-3-0-m2"&gt;&lt;/a&gt;What’s New in Spring Session 1.3.0 M2&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Highlights include:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;First Class Support for &lt;a href="http://docs.spring.io/spring-session/docs/1.3.0.M2/reference/html5/#httpsession-hazelcast"&gt;Hazelcast&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;First class &lt;a href="http://docs.spring.io/spring-session/docs/1.3.0.M3/reference/html5/#spring-security-concurrent-sessions-how"&gt;Spring Security’s concurrent session management&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/tree/1.3.0.M2/samples/httpsession-redis-json"&gt;Redis Sample with GenericJackson2JsonRedisSerializer&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;spring.session.cleanup.cron.expression&lt;/code&gt; can be used to override the cleanup task&amp;#8217;s cron expression&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Lots of performance improvements and bug fixes&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h1 id="contributions" class="sect0"&gt;&lt;a class="anchor" href="#contributions"&gt;&lt;/a&gt;Contributions&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Without the community we couldn&amp;#8217;t be the successful project we are today. I&amp;#8217;d like to thank everyone that created issues &amp;amp; provided feedback.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="feedback-please" class="sect0"&gt;&lt;a class="anchor" href="#feedback-please"&gt;&lt;/a&gt;Feedback Please&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you have feedback on this release, I encourage you to reach out via &lt;a href="http://stackoverflow.com/questions/tagged/spring-session"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-session/issues"&gt;GitHub Issues&lt;/a&gt;, or via the comments section. You can also ping me &lt;a href="https://twitter.com/rob_winch"&gt;@rob_winch&lt;/a&gt; or Joe &lt;a href="https://twitter.com/joe_grandja"&gt;@joe_grandja&lt;/a&gt; on Twitter.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Of course the best feedback comes in the form of &lt;a href="https://github.com/spring-projects/spring-session/blob/1.3.0.M2/CONTRIBUTING.adoc"&gt;contributions&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-session/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session/docs/1.3.0.M2/reference/html5/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-session"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - September 13, 2016</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/13/this-week-in-spring-september-13-2016" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2016-09-13:2615</id>
-    <updated>2016-09-13T10:30:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been an amazing week here in China, hanging out with Alibaba and Huawei, bringing the Spring. This week it&amp;rsquo;s off to Shanghai, Beijing, Guangzhou, Shenzhen and Hong Kong! &lt;/p&gt;
-&lt;p&gt;Our pal &lt;a href="http://twitter.com/PieterHumphrey"&gt;Pieter Humphrey&lt;/a&gt; has been busy this week getting the SpringOne Platform 2016 videos up and online for us to enjoy so there&amp;rsquo;s a lot of good stuff this week! Thanks Pieter!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Want see Mark Fisher and Mark Pollack present and live demo their way through Spring Cloud Data Flow on September 29th? &lt;a href="https://spring.io/blog/2016/09/13/webinar-data-microservices-in-the-cloud"&gt;Reserve your seat now!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to learn what&amp;rsquo;s new in Spring Framework 4.3? &lt;a href="https://spring.io/blog/2016/09/12/springone-platform-2016-replay-modern-java-component-design-with-spring-framework-4-3"&gt;Join Spring framework lead Juergen Hoeller for this look at an awesome framework&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this talk from Home Depot &lt;a href="https://spring.io/blog/2016/09/12/springone-platform-2016-replay-12-factor-or-cloud-native-apps-what-exactly-does-that-mean-for-spring-developers"&gt;on what 12 Factor applications means to a Java Developer&lt;/a&gt; and turns out it was one of the top attended at the conference!&lt;/li&gt;
-  &lt;li&gt;I gave an almost &lt;em&gt;2 hour&lt;/em&gt; long talk at SpringOne Platform 2016 called &lt;a href="https://spring.io/blog/2016/09/12/springone-platform-2016-replay-cloud-native-java"&gt;&lt;em&gt;Cloud Native Java&lt;/em&gt;&lt;/a&gt; covering Spring Boot (REST, HATEOAS, Actuator, JPA), Spring Cloud (centralized configuration, service registration and discovery, circuit breakers, microproxies, API gateways, eventual consistency, stream processing, observability and monitoring, distributed tracing), Spring Cloud Security (OAuth and SSO) and Spring Cloud Data Flow. Get it while it&amp;rsquo;s hot!&lt;/li&gt;
-  &lt;li&gt;Join Apache Tomcat ninja Mark Thomas for &lt;a href="https://spring.io/blog/2016/09/12/springone-platform-2016-replay-apache-tomcat-roadmap"&gt;a great look at the Apache Tomcat roadmap&lt;/a&gt; in this talk from SpringOne Platform 2016&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Task and Spring Batch lead Michael Minella has &lt;a href="https://spring.io/blog/2016/09/09/spring-cloud-task-1-0-3-release-and-1-1-0-m1-are-now-available"&gt;just announced Spring Cloud Task 1.0.3 and 1.1.0.M1 are now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration lead Gary Russell has just announced Spring for Apache Kafka 1.1.0 M2, which now supports &lt;a href="https://spring.io/blog/2016/09/08/spring-for-apache-kafka-1-1-0-milestone-2-available"&gt;&lt;em&gt;batching&lt;/em&gt; consumption of messages from a Kafka destination&lt;/a&gt; and seek operations! Get it while it&amp;rsquo;s hot!&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Stream lead Marius Bogoevici has just &lt;a href="https://spring.io/blog/2016/09/08/spring-cloud-stream-brooklyn-rc1-is-available"&gt;announced Spring Cloud Stream Brooklyn RC1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Session lead Rob Winch has just announced &lt;a href="https://spring.io/blog/2016/09/07/spring-session-1-2-2-released"&gt;Spring Session 1.2.2 which contains numerous bugfixes and improvements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Cool! &lt;a href="https://github.com/cloudfoundry/gorouter/commit/1647c65cf65f712f7597c811cf7f98cfaab9365a"&gt;Instance-specific routing has just landed in Cloud Foundry&amp;rsquo;s &lt;code&gt;gorouter&lt;/code&gt;&lt;/a&gt;! This is &lt;em&gt;ideal&lt;/em&gt; for instance-specific Spring Boot actuator endpoints!&lt;/li&gt;
-  &lt;li&gt;I like this &lt;a href="http://www.huangyunkun.com/2016/08/30/spring-retry/"&gt;Chinese-language introduction to Spring Retry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to hack together a poor-man&amp;rsquo;s authorization server with Spring Session? &lt;a href="https://beku8.wordpress.com/2016/09/12/configuring-cross-domain-sso-and-slo-with-spring-security-and-spring-session/"&gt;This is a pretty good introduction!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://yq.aliyun.com/articles/60165"&gt;I loved this blog introducing Spring Cloud Sleuth and Zipkin support on Aliyun&amp;rsquo;s blog&lt;/a&gt;. Aliyun, for those not aware, is like AWS to Alibaba.com&amp;rsquo;s Amazon. This is super cool!&lt;/li&gt;
-  &lt;li&gt;Our former CTO Adrian Coyler has a great article on his Blog &amp;ldquo;The Morning Paper&amp;rdquo; on handling &lt;a href="https://blog.acolyer.org/2016/09/13/data-on-the-outside-versus-data-on-the-inside/"&gt;data in microservice architecture&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Webinar: Data Microservices in the Cloud</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/13/webinar-data-microservices-in-the-cloud" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-09-13:2616</id>
-    <updated>2016-09-13T10:28:00Z</updated>
-    <content type="html">&lt;p&gt;Speakers: Mark Pollack, Mark Fisher&lt;br/&gt;Spring Cloud Data Flow enables you to create data pipelines for many common use-cases such as data ingestion, real-time analytics and data import/export.&lt;br/&gt;In this webinar, we will introduce Spring Cloud Data Flow’s architecture and walk through the orchestration capabilities of long-running and short-lived data-centric applications on multiple runtime platforms such as Cloud Foundry, Kubernetes, Apache Mesos and Apache YARN.&lt;br/&gt;Spring Cloud Data Flow represents the evolution of Spring XD and retains the DSL to define data pipelines as well as the web based UI designer, but changes the component model from modules that used to run inside a container to standard Spring Boot applications built with Spring Cloud Stream and Spring Cloud Task APIs.&lt;/p&gt;
-&lt;p&gt;Date: Thursday, September 29, 2016&lt;br/&gt;Time: 7:00am PDT / 2:00pm GMT / 3:00pm CET&lt;br/&gt;&lt;a href="http://connect.pivotal.io/OSS_Webinar_7AM-Data-Microservices-in-the-Cloud_Q316_RegisterSpring.html"&gt;Register&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Thursday, September 29&lt;br/&gt;10:00AM PDT&lt;br/&gt;(San Francisco, GMT-07:00)&lt;br/&gt;&lt;a href="http://connect.pivotal.io/OSS_Webinar_10AMDataMicroservicesintheCloud_Q316_RegisterSpring.html"&gt;Register&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay: 12 Factor, or Cloud Native Apps: What EXACTLY Does that Mean for Spring Developers?</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/12/springone-platform-2016-replay-12-factor-or-cloud-native-apps-what-exactly-does-that-mean-for-spring-developers" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-09-12:2614</id>
-    <updated>2016-09-12T15:46:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Thomas Gamble, Home Depot&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/Pivotal/12-factor-or-cloud-native-apps-what-exactly-does-that-mean-for-spring-developers-64853692"&gt;http://www.slideshare.net/Pivotal/12-factor-or-cloud-native-apps-what-exactly-does-that-mean-for-spring-developers-64853692&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Your team is excited about getting started with Spring Boot and Cloud Native, but you&amp;rsquo;re not entirely sure you&amp;rsquo;re ready to have the team continuously delivering to prod using cf push from their local desktops. The freedom of cloud native development can be very empowering for developers, but it shouldn&amp;rsquo;t be something that terrifies the operations and security teams. We&amp;rsquo;ll discuss how you can setup a fast and reliable deployment process, as well as some interesting things to thing about in the future. One of the most well known descriptions of these new paradigms is the Twelve Factor App (12factor.net), which describes elements of cloud native applications. Many of these needs are squarely met through the Spring Framework, others require support from other systems. In this session we will examine each of the twelve factors and present how Spring, and platforms such as Cloud Foundry satisfy them, and in some cases we’ll even suggest that responsibility should shift from Spring to platforms. At the conclusion you will understand what is needed for cloud?native applications, why and how to deliver on those requirements.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/t2zfJBc1SeE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

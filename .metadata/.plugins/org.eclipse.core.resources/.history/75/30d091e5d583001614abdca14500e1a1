@@ -1,0 +1,24 @@
+package test;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import main.TradeData;
+
+
+//Use the same test class for testing different behavior by just changing the name of the xml file
+public class TradeDetailsTest {
+
+	@Test
+	public void testFlightRepo() {
+		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-3.xml ");
+		TradeData flightRepo = (TradeData) container.getBean("DoaLondon");
+		Assert.assertNotNull(flightRepo);
+//		List<TradeApp> flights = flightRepo.getTradeDetails();
+//		Assert.assertTrue(flights.size() > 0);
+//		for(Flight flight : flights)
+//			System.out.println(flight);
+	}
+}

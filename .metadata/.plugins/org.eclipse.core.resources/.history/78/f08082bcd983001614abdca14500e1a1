@@ -1,0 +1,48 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+
+import org.springframework.stereotype.Repository;
+
+import main.TradeApp;
+import main.TradeData;
+
+@Repository
+public class DaoLondon implements TradeData {
+
+	private DataSource dataSource;
+	
+	@Resource(name="ds")
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+
+	public void getTradeDetails(String tradeId) {
+		Connection conn = null;
+		PreparedStatement pst = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = dataSource.getConnection();
+			String sql = "select * from ln_trade";
+			pst = conn.prepareStatement(sql);
+			rs = pst.executeQuery();
+			while(rs.next()) {
+				TradeApp f = new TradeApp();
+				f.setAmount(rs.getString(2));
+			}
+		}
+		catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		finally {
+			try { rs.close(); pst.close(); conn.close(); } catch(Exception e) { }
+		}
+	}
+}
