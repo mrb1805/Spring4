@@ -21,6 +21,5 @@ public class TestCarParts {
 		part.setQuantity(25);
 		
 		carPartsInventory.addNewPart(part);
-		
 	}
 }
