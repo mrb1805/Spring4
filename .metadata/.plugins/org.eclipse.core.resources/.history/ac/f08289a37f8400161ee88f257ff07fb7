@@ -1,0 +1,21 @@
+package com.java.demo2Test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.jpmc.calc.CalculatorInterface;
+
+public class TestTextEditor {
+	
+	@Test
+	public void test(){
+		 //read XML and start creating bean
+		ApplicationContext container = new ClassPathXmlApplicationContext("demoConfig.xml");
+		// Get the bean 
+		CalculatorInterface calc = (CalculatorInterface) container.getBean("te");
+		System.out.println(calc.add(15,12));
+		
+	}
+
+}

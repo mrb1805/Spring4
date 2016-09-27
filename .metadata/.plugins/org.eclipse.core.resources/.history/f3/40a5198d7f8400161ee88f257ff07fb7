@@ -1,0 +1,11 @@
+package com.java.demo2Test;
+
+public class TestTextEditor {
+	
+	@test
+	public void test(){
+		
+		
+	}
+
+}
