@@ -1,0 +1,3 @@
+create table tbl_carparts (PartNo varchar(10),PartName varchar(30), Quantity varchar(30)));
+
+

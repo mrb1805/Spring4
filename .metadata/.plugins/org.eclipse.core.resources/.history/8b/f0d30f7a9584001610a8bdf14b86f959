@@ -1,0 +1,29 @@
+package com.training.dao;
+
+import java.util.List;
+
+import com.training.entity.CarParts;
+
+public class CarPartsInventoryImpl implements CarPartsInventory {
+
+	@Override
+	public void addNewPart(CarParts carParts) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CarParts loadCarParts(int partNo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CarParts> loadAllAvailableCarParts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

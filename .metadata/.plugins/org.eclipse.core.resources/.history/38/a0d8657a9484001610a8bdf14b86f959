@@ -1,0 +1,8 @@
+package com.training.dao;
+
+public interface CarPartsInventory {
+	
+	public void addNewPart(CarParts carParts);
+	public CarParts loadCarParts(int partNo);
+	public List<CarParts> loadAllAvailableCarParts();
+}

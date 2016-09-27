@@ -1,0 +1,17 @@
+package com.training.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.training.entity.CarParts;
+
+public class TestCarParts {
+	
+	@Test
+	public void testFlightRepo() {
+		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-3.xml ");
+		CarParts flightRepo = (CarParts) container.getBean("carPartsInv");
+		
+	}
+}
