@@ -15,7 +15,7 @@ public class TestCalc {
 		// Get the bean 
 		CalculatorInterface calc = (CalculatorInterface) container.getBean("calc");
 		System.out.println(calc.add(15,12));
-		System.out.println(calc.subtract(15,12));
+		System.out.println(calc.subtract(15,6));
 		
 	}
 
