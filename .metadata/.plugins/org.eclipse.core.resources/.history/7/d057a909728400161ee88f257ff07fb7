@@ -4,8 +4,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="flightRepo" class="com.jpmc.demo">
+	<!--  Please edit the DataSource configuration in db-config.xml file if required -->
+	<import resource="db-config.xml"/>
 	
+	<bean id="flightRepo" class="xml.FlightRepositoryImpl">
+		<property name="dataSource" ref="ds"></property>
+		<!--  TODO 1: Refer slide no. 21 to inject the DataSource -->
 	</bean>
 	  	
 </beans>
