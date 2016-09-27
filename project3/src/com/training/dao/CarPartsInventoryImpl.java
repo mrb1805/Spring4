@@ -38,10 +38,10 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 				part.setQuantity(rs.getInt("Quantity"));
 				return part;				
 			}
-		
 			
 		}
-		return null;
+			CarParts part = jdbcTemplate.queryForObject("select * from tbl_carparts where partno = ?",new CarPartsMapper(),partNo);	
+			return part;
 	}
 
 	@Override

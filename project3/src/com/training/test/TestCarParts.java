@@ -15,12 +15,15 @@ public class TestCarParts {
 		CarPartsInventory carPartsInventory = (CarPartsInventory) container.getBean("carPartsInv");
 		//Assert.assertNotNull(carPart);
 		
-		CarParts part = new CarParts();
-		part.setPartNo(123);
-		part.setPartName("Mirror");
-		part.setQuantity(25);
-		
-		carPartsInventory.addNewPart(part);
+//		CarParts part = new CarParts();
+//		part.setPartNo(321);
+//		part.setPartName("Mirror");
+//		part.setQuantity(250);
+//		
+//		carPartsInventory.addNewPart(part);
+//		
+		CarParts part = carPartsInventory.loadCarParts(321);
+		System.out.println(part.getPartNo() + " , "+ part.getPartName()+ " , "+ part.getQuantity());
 		
 	}
 }
