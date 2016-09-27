@@ -1,0 +1,8 @@
+package com.jpmc.calc;
+
+public interface CalculatorInterface {
+	
+	public void add(int num1, int num2);
+	public void subtract(int num1, int num2);
+
+}

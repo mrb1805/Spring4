@@ -1,0 +1,25 @@
+package test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import dao.DaoNewYork;
+import junit.framework.Assert;
+import main.TradeApp;
+import main.TradeData;
+
+
+
+//Use the same test class for testing different behavior by just changing the name of the xml file
+public class TradeDataTest {
+
+	@Test
+	public void testTradeData() {
+		ApplicationContext container = new ClassPathXmlApplicationContext("xml-config-1.xml");
+		TradeApp tradeDao = (TradeApp) container.getBean("tradeDataNY");
+
+		
+				
+	}
+}

@@ -1,0 +1,20 @@
+package com.jpmc.calcTest;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestCalc {
+	
+	@Test
+	public void test(){
+		 //read XML and start creating bean
+		ApplicationContext container = new ClassPathXmlApplicationContext("demoConfig.xml");
+		// Get the bean 
+		CalcInterface hw = (CalcInterface) container.getBean("hw");
+		System.out.println(hw.add(5,6));
+		System.out.println(hw.add(15,6));
+		
+	}
+
+}

@@ -33,6 +33,7 @@ public class DaoLondon implements TradeData {
 			while(rs.next()) {
 				TradeApp f = new TradeApp();
 				f.setAmount(rs.getString(2));
+				System.out.println(f.getAmount());
 			}
 		}
 		catch(SQLException e) {

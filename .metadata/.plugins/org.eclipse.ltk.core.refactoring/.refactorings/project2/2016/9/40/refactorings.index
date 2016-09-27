@@ -1,1 +1,8 @@
 1474953494242	Rename resource 'xml-config-1.xml'
+1474956078705	Delete element
+1474956207480	Move compilation unit
+1474956235660	Move compilation unit
+1474956870953	Extract interface 'CalculatorInterface'
+1474956911075	Move compilation units
+1474956942833	Copy compilation unit
+1474956954740	Rename type 'TestHelloWorld'

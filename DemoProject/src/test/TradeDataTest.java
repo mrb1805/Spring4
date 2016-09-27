@@ -22,6 +22,12 @@ public class TradeDataTest {
 		TradeApp data = new TradeApp();
 		System.out.println(data.toString());
 		
+//		Assert.assertNotNull(tradeDao);
+//		tradeDao.setTradeId("NY123");
+//		TradeData data = new DaoNewYork();
+//		data.getTradeDetails("NY123");
+		
+		
 		
 	}
 }

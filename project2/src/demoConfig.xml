@@ -6,5 +6,8 @@
 
 	<bean id="hw" class="com.jpmc.demo.HelloWorld">
 	</bean>
+	
+	<bean id="calc" class="com.jpmc.calc.Calculator">
+	</bean>
 	  	
 </beans>
