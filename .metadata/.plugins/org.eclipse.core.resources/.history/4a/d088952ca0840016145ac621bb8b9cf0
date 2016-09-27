@@ -1,0 +1,44 @@
+package com.training.dao;
+
+import java.util.List;
+
+import javax.swing.tree.RowMapper;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+
+import com.training.entity.CarParts;
+
+@Component("carPartsInv")
+public class CarPartsInventoryImpl implements CarPartsInventory {
+
+	// IN this example instead of writting traditional jdbc code,
+	// we are going to use an API class provided by Spring called
+	// as JDBCTemplate Class
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	@Override
+	public void addNewPart(CarParts carParts) {
+		jdbcTemplate.update("insert into tbl_carparts values(?,?,?)",carParts.getPartNo(),carParts.getPartName(),carParts.getQuantity());;
+	}
+
+	@Override
+	public CarParts loadCarParts(int partNo) {
+		class CarPartsManager implements RowMapper<CarParts>{
+			
+			
+		}
+		return null;
+	}
+
+	@Override
+	public List<CarParts> loadAllAvailableCarParts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

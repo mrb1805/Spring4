@@ -1,9 +1,12 @@
 package com.training.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
 import com.training.entity.CarParts;
@@ -25,7 +28,19 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 
 	@Override
 	public CarParts loadCarParts(int partNo) {
-		// TODO Auto-generated method stub
+		class CarPartsMapper implements RowMapper<CarParts>{
+
+			@Override
+			public CarParts mapRow(ResultSet rs, int index) throws SQLException{
+				com.training.entity.CarParts part = new CarParts();
+				part.setPartNo(rs.getInt("PartNo"));
+				part.setPartName(rs.getString("PartName"));
+				part.setQuantity(rs.getInt("Quantity"));
+				return part;				
+			}
+		
+			
+		}
 		return null;
 	}
 
@@ -34,6 +49,5 @@ public class CarPartsInventoryImpl implements CarPartsInventory {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 
 }

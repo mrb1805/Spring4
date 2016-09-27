@@ -2146,3 +2146,9 @@ java.net.UnknownHostException: dist.springsource.com
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-09-27 03:34:27.429
 !MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-27 03:50:23.917
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-27 03:50:23.917
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

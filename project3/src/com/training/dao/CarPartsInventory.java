@@ -2,8 +2,6 @@ package com.training.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
-
 import com.training.entity.CarParts;
 
 
