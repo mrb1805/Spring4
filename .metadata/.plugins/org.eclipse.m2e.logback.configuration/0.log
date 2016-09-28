@@ -665,3 +665,4 @@
 2016-09-28 00:45:28,490 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/milestone/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 2016-09-28 00:45:29,129 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.spring.io/snapshot/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 2016-09-28 00:48:56,607 [Worker-75] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo:0.0.1-SNAPSHOT @ C:\Spring\SpringBootDemo1\pom.xml.
+2016-09-28 02:19:06,238 [Worker-90] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo:0.0.1-SNAPSHOT @ C:\Spring\SpringBootDemo\pom.xml.
