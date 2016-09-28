@@ -28,7 +28,7 @@ public class ShoppingServiceImpl implements ShoppingService{
 		
 		//insert in payment tables
 		Payment payment = order.getPayment();
-		jdbcTemplate.update("insert into tbl_payments(paymentid,mode,amount,orderid) values(?,?,?,?)",payment.getId(),payment.getMode(),payment.getAmount(),order.getId());
+		jdbcTemplate.update("insert into tbl_payments values(?,?,?,?)",payment.getId(),payment.getMode(),payment.getAmount(),order.getId());
 		
 	}
 

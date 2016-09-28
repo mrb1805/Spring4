@@ -1,0 +1,21 @@
+package com.st.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.st.service.ShoppingService;
+
+public class TestService {
+	
+	@Test
+	public void test(){
+		
+		ApplicationContext container = new ClassPathXmlApplicationContext("configSpringTransaction.xml");
+		ShoppingService carPartsInventory = (ShoppingService) container.getBean("carPartsInv");
+		
+		
+	}
+	 
+
+}

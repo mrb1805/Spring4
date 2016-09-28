@@ -1,0 +1,21 @@
+package com.st.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.training.dao.CarPartsInventory;
+
+public class TestService {
+	
+	@Test
+	public void test(){
+		
+		ApplicationContext container = new ClassPathXmlApplicationContext("configJdbc.xml");
+		CarPartsInventory carPartsInventory = (CarPartsInventory) container.getBean("carPartsInv");
+		
+		
+	}
+	 
+
+}
