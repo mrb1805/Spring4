@@ -1,0 +1,15 @@
+package com.st.entity;
+
+import java.util.List;
+
+public class Order {
+	
+	private int id;
+	private double amount;
+	
+	private List<LineItem> items;
+	
+	private Payment payment;
+	
+
+}

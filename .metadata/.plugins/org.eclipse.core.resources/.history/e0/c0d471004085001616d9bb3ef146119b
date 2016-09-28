@@ -1,0 +1,9 @@
+package com.st.entity;
+
+public class Payment {
+	
+	private int id;
+	private String mode;
+	private double amount;
+
+}

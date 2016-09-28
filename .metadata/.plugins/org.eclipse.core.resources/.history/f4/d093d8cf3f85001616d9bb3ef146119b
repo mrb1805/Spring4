@@ -1,0 +1,8 @@
+package com.st.entity;
+
+public class LineItem {
+	
+	private int id;
+	private int quantity;
+
+}

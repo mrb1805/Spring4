@@ -1,0 +1,25 @@
+package com.st.service;
+
+import com.st.entity.Order;
+
+public class ShoppingServiceImpl implements ShoppingService{
+
+	@Override
+	public void placeOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void cancelOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Order fetchOrder(Order order) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

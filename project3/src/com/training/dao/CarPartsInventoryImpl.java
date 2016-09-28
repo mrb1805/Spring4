@@ -50,3 +50,4 @@ class CarPartsMapper implements RowMapper<CarParts>{
 		return part;				
 	}
 }
+}

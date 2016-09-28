@@ -1,0 +1,9 @@
+package com.st.entity;
+
+public class Order {
+	
+	private int id;
+	private double amount;
+	
+
+}

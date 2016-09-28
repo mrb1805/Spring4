@@ -1,0 +1,29 @@
+package com.st.service;
+
+import org.springframework.stereotype.Service;
+
+import com.st.entity.Order;
+
+//@Component("shoppingServ")
+@Service("shoppingServ")
+public class ShoppingServiceImpl implements ShoppingService{
+
+	@Override
+	public void placeOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void cancelOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Order fetchOrder(Order order) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
