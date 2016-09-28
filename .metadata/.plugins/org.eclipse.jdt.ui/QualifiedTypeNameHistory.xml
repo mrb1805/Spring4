@@ -8,4 +8,7 @@
 <fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="com.training.entity.CarParts"/>
+<fullyQualifiedTypeName name="com.st.entity.LineItem"/>
+<fullyQualifiedTypeName name="com.st.entity.Order"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
