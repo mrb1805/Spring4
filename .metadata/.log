@@ -4050,3 +4050,123 @@ java.net.SocketTimeoutException: connect timed out
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 02:25:10.320
 !MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:22.957
+!MESSAGE The POM for com.oracle.jdbc:ojdbc7:jar:12.1.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.148
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-help-plugin:jar:2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.155
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:xml-maven-plugin:jar:1.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.163
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.167
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-help-plugin:jar:2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.170
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:xml-maven-plugin:jar:1.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.174
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:25.299
+!MESSAGE The POM for com.oracle.jdbc:ojdbc7:jar:12.1.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.237
+!MESSAGE The POM for com.oracle.jdbc:ojdbc7:jar:12.1.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.278
+!MESSAGE The POM for org.apache.maven.plugins:maven-help-plugin:jar:2.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.282
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-help-plugin:jar:2.2 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.285
+!MESSAGE The POM for org.codehaus.mojo:xml-maven-plugin:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.289
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:xml-maven-plugin:jar:1.0 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.293
+!MESSAGE The POM for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.297
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.301
+!MESSAGE The POM for org.apache.maven.plugins:maven-help-plugin:jar:2.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.385
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-help-plugin:jar:2.2 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.389
+!MESSAGE The POM for org.codehaus.mojo:xml-maven-plugin:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.393
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:xml-maven-plugin:jar:1.0 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.397
+!MESSAGE The POM for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.401
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:27.580
+!MESSAGE The POM for com.oracle.jdbc:ojdbc7:jar:12.1.0.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.235
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-help-plugin:jar:2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.242
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:xml-maven-plugin:jar:1.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.248
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.251
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-help-plugin:jar:2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.257
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:xml-maven-plugin:jar:1.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:58.260
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.753
+!MESSAGE The POM for org.apache.maven.plugins:maven-help-plugin:jar:2.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.759
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-help-plugin:jar:2.2 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.765
+!MESSAGE The POM for org.codehaus.mojo:xml-maven-plugin:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.772
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:xml-maven-plugin:jar:1.0 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.793
+!MESSAGE The POM for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.807
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.850
+!MESSAGE The POM for org.apache.maven.plugins:maven-help-plugin:jar:2.2 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.858
+!MESSAGE Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-help-plugin:2.2: Plugin org.apache.maven.plugins:maven-help-plugin:2.2 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-help-plugin:jar:2.2 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.862
+!MESSAGE The POM for org.codehaus.mojo:xml-maven-plugin:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.866
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:xml-maven-plugin:1.0: Plugin org.codehaus.mojo:xml-maven-plugin:1.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:xml-maven-plugin:jar:1.0 has not been downloaded from it before.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.870
+!MESSAGE The POM for org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-28 03:35:59.873
+!MESSAGE Failed to retrieve plugin descriptor for org.codehaus.mojo:build-helper-maven-plugin:1.10: Plugin org.codehaus.mojo:build-helper-maven-plugin:1.10 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.codehaus.mojo:build-helper-maven-plugin:jar:1.10 has not been downloaded from it before.
