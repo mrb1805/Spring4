@@ -44,7 +44,7 @@ public class TestService {
 		
 		Payment payment = new Payment();
 		payment.setId(111);
-		payment.setMode("ATM");
+		payment.setMode("Credit Card");
 		payment.setAmount(order.getAmount());
 		order.setPayment(payment);
 
