@@ -1,7 +1,0 @@
-package com.training.dao;
-
-public class CarPartsInventoryImpl implements CarPartsInventory {
-	
-	
-
-}
